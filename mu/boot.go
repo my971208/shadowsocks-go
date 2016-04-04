@@ -143,6 +143,7 @@ func checkUsers(users []user.User) {
 			if err != nil {
 				Log.Error("store  error: ", err)
 			}
+			time.Sleep(300)
 			go runWithCustomMethod(user)
 		}
 	}
